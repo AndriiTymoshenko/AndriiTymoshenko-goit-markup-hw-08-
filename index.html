@@ -117,15 +117,15 @@
 
           <ul class="about-list">
             <li class="about-list__item">
-              <img src="./images/main/box1.jpg" alt="Розробка веб-сторінок" width="370" />
+              <img src="./images/main/box1.jpg" alt="Десктопні додатки" width="370" />
               <h3 class="about-list__title">Десктопні додатки</h3>
             </li>
             <li class="about-list__item">
-              <img src="./images/main/box2.jpg" alt="Адаптиви" width="370" />
+              <img src="./images/main/box2.jpg" alt="Мобільні додатки" width="370" />
               <h3 class="about-list__title">Мобільні додатки</h3>
             </li>
             <li class="about-list__item">
-              <img src="./images/main/box3.jpg" alt="Дизайн" width="370" />
+              <img src="./images/main/box3.jpg" alt="Дизайнерські рішення" width="370" />
               <h3 class="about-list__title">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -138,7 +138,13 @@
 
           <ul class="team-list">
             <li class="team-list__item">
-              <img src="./images/main/team-card-one.jpg" alt="" width="270" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/main/team1-desktop@1x.jpg 1x, ./images/main/team1-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="./images/main/team1-tablet@1x.jpg 1x, ./images/main/team1-tablet@2x.jpg 2x"/>
+                <source media="(max-width: 767px)" srcset="./images/main/team1-mobile@1x.jpg 1x, ./images/main/team1-mobile@2x.jpg 2x"/>
+                <img src="./images/main/team1-desktop@1x.jpg" alt="Ігор Дем'яненко" />
+              </picture>
+              
               <div class="team-list__meta">
                 <h3 class="team-list__name">Ігор Дем'яненко</h3>
                 <p class="team-list__position">Product Designer</p>
@@ -195,7 +201,12 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/main/team-card-two.jpg" alt="" width="270" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/main/team2-desktop@1x.jpg 1x, ./images/main/team2-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="./images/main/team2-tablet@1x.jpg 1x, ./images/main/team2-tablet@2x.jpg 2x"/>
+                <source media="(max-width: 767px)" srcset="./images/main/team2-mobile@1x.jpg 1x, ./images/main/team2-mobile@2x.jpg 2x"/>
+                <img src="./images/main/team2-desktop@1x.jpg" alt="Ольга Рєпіна" />
+              </picture>
               <div class="team-list__meta">
                 <h3 class="team-list__name">Ольга Рєпіна</h3>
                 <p class="team-list__position">Frontend Developer</p>
@@ -252,7 +263,12 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/main/team-card-three.jpg" alt="" width="270" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/main/team3-desktop@1x.jpg 1x, ./images/main/team3-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="./images/main/team3-tablet@1x.jpg 1x, ./images/main/team3-tablet@2x.jpg 2x"/>
+                <source media="(max-width: 767px)" srcset="./images/main/team3-mobile@1x.jpg 1x, ./images/main/team3-mobile@2x.jpg 2x"/>
+                <img src="./images/main/team3-desktop@1x.jpg" alt="Микола Тарасов" />
+              </picture>
               <div class="team-list__meta">
                 <h3 class="team-list__name">Микола Тарасов</h3>
                 <p class="team-list__position">Marketing</p>
@@ -309,7 +325,12 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/main/team-card-four.jpg" alt="" width="270" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/main/team4-desktop@1x.jpg 1x, ./images/main/team4-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="./images/main/team4-tablet@1x.jpg 1x, ./images/main/team4-tablet@2x.jpg 2x"/>
+                <source media="(max-width: 767px)" srcset="./images/main/team4-mobile@1x.jpg 1x, ./images/main/team4-mobile@2x.jpg 2x"/>
+                <img src="./images/main/team4-desktop@1x.jpg" alt="Михайло Єрмаков"/>
+              </picture>
               <div class="team-list__meta">
                 <h3 class="team-list__name">Михайло Єрмаков</h3>
                 <p class="team-list__position">UI Designer</p>
@@ -570,7 +591,6 @@
         
       </div>
     </div>
-    <script src="./js/fixed-header.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
