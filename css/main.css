@@ -778,6 +778,13 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.clients-list__item {
+  width: 170px;
 }
 
 @media screen and (max-width: 767px) {
