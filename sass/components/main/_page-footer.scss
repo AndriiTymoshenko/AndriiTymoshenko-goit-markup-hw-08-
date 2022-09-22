@@ -6,6 +6,14 @@
 .page-footer__container {
   @extend .container;
 
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.page-footer__content {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  text-align: center;
 }

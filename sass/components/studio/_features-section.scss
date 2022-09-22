@@ -1,11 +1,17 @@
 .feature-list {
   @extend %list;
+
   display: flex;
+  flex-wrap: wrap;
   gap: $indent;
 }
 
 .feature-list__item {
-  width: 270px;
+  width: 100%;
+
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
 }
 
 .feature-list__icon {
@@ -18,12 +24,17 @@
 
 .feature-list__title {
   margin-bottom: 10px;
+  text-align: center;
 
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+  }
 }
 
 .feature-list__text {

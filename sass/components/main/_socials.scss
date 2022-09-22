@@ -1,5 +1,7 @@
 .socials {
-  margin-right: 93px;
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
 }
 
 .socials-list {
@@ -8,6 +10,7 @@
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 60px;
 }
 
 .socials-list__link {
