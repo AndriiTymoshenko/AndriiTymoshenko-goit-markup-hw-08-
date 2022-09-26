@@ -10,7 +10,10 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 60px;
+  }
 }
 
 .socials-list__link {

@@ -122,10 +122,10 @@
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -135,7 +135,7 @@
 }
 
 .site-nav__link--current {
-  color: var(--accent-color);
+  color: $accent-color;
 
   @media screen and (min-width: $tablet) {
     position: relative;
@@ -215,14 +215,14 @@
     color: var(--accent-color);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: inline-flex;
     align-items: center;
 
     font-size: 12px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -258,7 +258,7 @@
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
@@ -285,13 +285,14 @@
 
 .menu-networks__link {
   display: inline-flex;
-  color: $accent-color;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  color: $accent-color;
 
   text-decoration: none;
 }

@@ -1,9 +1,14 @@
 .sort-list {
   @extend %list;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin-bottom: 50px;
   gap: 8px;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
 }
 
 .sort-list__button {

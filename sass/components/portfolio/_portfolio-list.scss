@@ -8,6 +8,7 @@
 .portfolio-list__link {
   @extend %link;
   display: inline-block;
+  width: 100%;
   text-decoration: none;
 
   transition: box-shadow 250ms $transition;

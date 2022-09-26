@@ -13,6 +13,10 @@
   @media screen and (max-width: 767px) {
     flex-basis: calc((100% - 30px) / 2);
   }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    flex-basis: calc((100% - 30px * 2) / 3);
+  }
 }
 
 .clients-list__link {

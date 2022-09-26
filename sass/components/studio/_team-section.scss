@@ -12,7 +12,8 @@
 }
 
 .team-list__meta {
-  padding: $indent;
+  padding-top: $indent;
+  padding-bottom: 24px;
   text-align: center;
 
   background-color: $primary-white-color;
