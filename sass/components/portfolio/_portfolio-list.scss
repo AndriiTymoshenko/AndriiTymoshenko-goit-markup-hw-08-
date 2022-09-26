@@ -5,10 +5,15 @@
   gap: $indent;
 }
 
+.portfolio-list__item {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
 .portfolio-list__link {
   @extend %link;
   display: inline-block;
-  width: 100%;
   text-decoration: none;
 
   transition: box-shadow 250ms $transition;
@@ -55,6 +60,15 @@
   border-right: 1px solid $border-primary-color;
   border-bottom: 1px solid $border-primary-color;
   border-left: 1px solid $border-primary-color;
+
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   .portfolio-list__link:first-child & {
+  //     flex-grow: 1;
+  //   }
+  // }
+  &:nth-child(-n + 2) {
+    height: 146px;
+  }
 }
 
 .portfolio-list__title {
