@@ -18,6 +18,12 @@
 
   transition: box-shadow 250ms $transition;
 
+  &:first-child {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
   &:hover,
   &:focus {
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.12), 2px 1px 5px rgba(0, 0, 0, 0.14),
@@ -62,8 +68,7 @@
   border-left: 1px solid $border-primary-color;
 
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    & portfolio-list__link:first-child {
-      height: 164px;
+    .portfolio-list__link:first-child & {
       flex-grow: 1;
     }
   }
