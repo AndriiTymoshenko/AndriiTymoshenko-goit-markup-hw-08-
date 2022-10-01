@@ -8,11 +8,11 @@
 
     background-color: $backdrop-color;
 
-    transition: opacity 250ms $transition, visibility 2450ms $transition;
+    transition: opacity 250ms $transition, visibility 250ms $transition;
 
     @media screen and (max-width: 767px) {
         padding: 93px 15px 94px 15px;
-        z-index: 5;
+        z-index: 4;
     }
 
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
@@ -219,7 +219,7 @@
 
 .modal-form__link {
     @extend %link;
-    color: tomato;
+    color: $accent-color;
 }
 
 .modal-form__sending {
