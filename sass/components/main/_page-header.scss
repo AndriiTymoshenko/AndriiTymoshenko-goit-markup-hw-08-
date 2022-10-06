@@ -213,7 +213,7 @@
 
     &:hover,
     &:focus {
-        color: var(--accent-color);
+        color: $accent-color;
     }
 
     @media screen and (min-width: $tablet) {
