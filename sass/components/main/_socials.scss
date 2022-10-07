@@ -1,55 +1,51 @@
 .socials {
-  @media screen and (min-width: $desktop) {
-    margin-right: 93px;
-  }
+    @media screen and (min-width: $desktop) {
+        margin-right: 93px;
+    }
 }
 
 .socials-list {
-  @extend %list;
+    @extend %list;
 
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 60px;
-  }
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .socials-list__link {
-  @extend %link;
-  @include centeredFlex;
+    @extend %link;
+    @include centeredFlex;
 
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: $icon-color;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $icon-color;
 
-  transition: color 250ms $transition, background-color 250ms $transition;
+    transition: color 250ms $transition, background-color 250ms $transition;
 
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-    color: $primary-white-color;
-  }
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $primary-white-color;
+    }
 }
 
 .socials-list__icon {
-  fill: currentColor;
+    fill: currentColor;
 }
 
 .socials__text {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $primary-white-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-white-color;
 }
 
 .socials-list__link--white {
-  color: $primary-white-color;
-  background-color: $footer-link-background-color;
+    color: $primary-white-color;
+    background-color: $footer-link-background-color;
 }

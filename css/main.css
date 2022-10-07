@@ -980,12 +980,6 @@ img {
   gap: 10px;
 }
 
-@media screen and (min-width: 1200px) {
-  .socials-list {
-    margin-bottom: 60px;
-  }
-}
-
 .socials-list__link {
   display: -webkit-box;
   display: -ms-flexbox;
